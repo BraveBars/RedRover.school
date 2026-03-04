@@ -9,7 +9,7 @@ package com.hw9.hw1;
 //Notes:
 //There's no need to check for negative values!
 //initialise the side to 0.
-public class Task1 {
+public class Cube {
     private int side = 0;
 
     public int getSide() {
