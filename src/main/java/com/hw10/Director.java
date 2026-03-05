@@ -3,8 +3,8 @@ package com.hw10;
 import com.hw8.Month;
 import com.hw8.MonthUtils;
 
-//Класс Director должен вести себя как Manager,
-//но давать надбавку к зарплате в 3% за каждого подчиненного.
+// Класс Director должен вести себя как Manager,
+// но давать надбавку к зарплате в 3% за каждого подчиненного.
 public class Director extends Manager {
     public Director(String name, int salaryPerDay, int teamSize) {
         super(name, salaryPerDay, teamSize);
