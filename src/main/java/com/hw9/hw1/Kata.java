@@ -32,49 +32,36 @@ package com.hw9.hw1;
 //}
 public class Kata {
     public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
-        Fighter a = firstAttacker.equals(fighter1.name) ? fighter1 : fighter2;
-        Fighter b = a == fighter1 ? fighter2 : fighter1;
+        Fighter a = fighter1;
+        Fighter b = fighter2;
+        if (firstAttacker.equals(fighter2.name)) {
+            a = fighter2;
+            b = fighter1;
+        }
         while (true) {
-            b.health -= a.damagePerAttack;
-            System.out.printf("%s attacks %s; %s now has %d health.\n",
-                    a.name, b.name, b.name, b.health);
-            if (b.health <= 0) {
+            if ((b.health -= a.damagePerAttack) <= 0) {
                 return a.name;
             }
-
-            Fighter temp = a;
-            a = b;
-            b = temp;
+            if ((a.health -= b.damagePerAttack) <= 0) {
+                return b.name;
+            }
         }
     }
-
-//        if (firstAttacker.equals(fighter1.name)) {
-//            while (fighter1.health > 0 && fighter2.health > 0) {
-//                fighter2.health -= fighter1.damagePerAttack;
-//                System.out.printf("%s attacks %s; %s now has %d health.\n",
-//                        fighter1.name, fighter2.name, fighter2.name, fighter2.health);
-//
-//                if (fighter2.health > 0) {
-//                    fighter1.health -= fighter2.damagePerAttack;
-//                    System.out.printf("%s attacks %s; %s now has %d health.\n",
-//                            fighter2.name, fighter1.name, fighter1.name, fighter1.health);
-//                }
+//    public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+//        Fighter a = firstAttacker.equals(fighter1.name) ? fighter1 : fighter2;
+//        Fighter b = a == fighter1 ? fighter2 : fighter1;
+//        while (true) {
+//            b.health -= a.damagePerAttack;
+//            System.out.printf("%s attacks %s; %s now has %d health.\n",
+//                    a.name, b.name, b.name, b.health);
+//            if (b.health <= 0) {
+//                return a.name;
 //            }
-//        } else if (firstAttacker.equals(fighter2.name)) {
-//            while (fighter1.health >= 0 && fighter2.health >= 0) {
-//                fighter1.health -= fighter2.damagePerAttack;
-//                System.out.printf("%s attacks %s; %s now has %d health.\n",
-//                        fighter2.name, fighter1.name, fighter1.name, fighter1.health);
 //
-//                if (fighter1.health > 0) {
-//                    fighter2.health -= fighter1.damagePerAttack;
-//                    System.out.printf("%s attacks %s; %s now has %d health.\n",
-//                            fighter1.name, fighter2.name, fighter2.name, fighter2.health);
-//                }
-//            }
+//            Fighter temp = a;
+//            a = b;
+//            b = temp;
 //        }
-//
-//        return fighter1.health <= 0 ? fighter2.name : fighter1.name;
 //    }
 
     public static void main(String[] args) {
