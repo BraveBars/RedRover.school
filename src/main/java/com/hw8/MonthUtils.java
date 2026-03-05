@@ -14,6 +14,11 @@ public class MonthUtils {
     public static final Month NOVEMBER = new Month("november", 30, 21);
     public static final Month DECEMBER = new Month("december", 31, 22);
 
-    public static final Month[] ALL_MONTHS = {JANUARY, FEBRUARY, MARCH, APRIL, MAY,
+    public static final Month[] FIRST_QUARTER = {JANUARY, FEBRUARY, MARCH};
+    public static final Month[] SECOND_QUARTER = {APRIL, MAY, JUNE};
+    public static final Month[] THIRD_QUARTER = {JULY, AUGUST, SEPTEMBER};
+    public static final Month[] FOURTH_QUARTER = {OCTOBER, NOVEMBER, DECEMBER};
+
+    public static final Month[] YEAR = {JANUARY, FEBRUARY, MARCH, APRIL, MAY,
             JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
 }

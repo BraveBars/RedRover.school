@@ -23,6 +23,10 @@ public class SalaryUtils {
     public static void main(String[] args) {
         Employee employee = new Employee("Ivan", 25, 'M', 50);
         System.out.println(calculateSalaryForOneMonth(employee, MonthUtils.APRIL));
-        System.out.println(calculateSalaryForManyMonths(employee, MonthUtils.ALL_MONTHS));
+        System.out.println(calculateSalaryForManyMonths(employee, MonthUtils.FIRST_QUARTER));
+        System.out.println(calculateSalaryForManyMonths(employee, MonthUtils.SECOND_QUARTER));
+        System.out.println(calculateSalaryForManyMonths(employee, MonthUtils.THIRD_QUARTER));
+        System.out.println(calculateSalaryForManyMonths(employee, MonthUtils.FOURTH_QUARTER));
+        System.out.println(calculateSalaryForManyMonths(employee, MonthUtils.YEAR));
     }
 }
