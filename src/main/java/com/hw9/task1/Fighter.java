@@ -1,4 +1,4 @@
-package com.hw9.hw1;
+package com.hw9.task1;
 
 public class Fighter {
     public String name;

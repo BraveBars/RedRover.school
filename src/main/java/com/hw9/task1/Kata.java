@@ -1,4 +1,4 @@
-package com.hw9.hw1;
+package com.hw9.task1;
 
 //Create a function that returns the name of the winner in a fight between two fighters.
 //

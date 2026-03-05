@@ -1,4 +1,4 @@
-package com.hw9.hw1;
+package com.hw9.task1;
 
 //https://www.codewars.com/kata/playing-with-cubes-i/train/java
 //Create a public class called Cube without a constructor which gets one single

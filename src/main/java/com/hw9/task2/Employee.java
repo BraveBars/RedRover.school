@@ -1,4 +1,4 @@
-package com.hw9.hw2;
+package com.hw9.task2;
 
 //Необходимо создать класс Employee с полями как у Person (из предыдущего задания)
 //и поле зарплата. Класс должен иметь метод isSameName(Employee employee) который

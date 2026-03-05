@@ -1,4 +1,4 @@
-package com.hw9.hw1;
+package com.hw9.task1;
 
 //Write a class Block that creates a block (Duh..)
 //
