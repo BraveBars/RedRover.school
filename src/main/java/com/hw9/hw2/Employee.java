@@ -20,6 +20,38 @@ public class Employee {
         return this.name.equals(employee.name);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
     public static void main(String[] args) {
         Employee employee1 = new Employee("Anna", 24, 'f', 2000);
         Employee employee2 = new Employee("Alex", 31, 'M', 3000);
