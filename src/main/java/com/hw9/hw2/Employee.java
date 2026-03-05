@@ -1,4 +1,5 @@
 package com.hw9.hw2;
+
 //Необходимо создать класс Employee с полями как у Person (из предыдущего задания)
 //и поле зарплата. Класс должен иметь метод isSameName(Employee employee) который
 //возвращает true, если у сотрудника у которого был вызван метод и сотрудника который
@@ -9,14 +10,14 @@ public class Employee {
     private char sex;
     private int salary;
 
-    public Employee(String name, int age, char sex, int salary){
+    public Employee(String name, int age, char sex, int salary) {
         this.name = name;
         this.age = age;
         this.sex = sex;
         this.salary = salary;
     }
 
-    public boolean isSameName(Employee employee){
+    public boolean isSameName(Employee employee) {
         return this.name.equals(employee.name);
     }
 
