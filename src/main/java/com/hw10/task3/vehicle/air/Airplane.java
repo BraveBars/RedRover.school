@@ -1,4 +1,4 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.air;
 
 public class Airplane extends AirVehicle {
     private int passengerCount;

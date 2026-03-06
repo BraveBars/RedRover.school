@@ -1,4 +1,6 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.air;
+
+import com.hw10.task3.vehicle.base.Vehicle;
 
 abstract class AirVehicle extends Vehicle {
     private int maxAltitudeMeters;

@@ -1,6 +1,6 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.base;
 
-abstract class Vehicle {
+public abstract class Vehicle {
     private String brand;
     private String model;
     private int year;

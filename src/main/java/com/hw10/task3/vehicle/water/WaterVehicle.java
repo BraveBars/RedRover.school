@@ -1,4 +1,6 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.water;
+
+import com.hw10.task3.vehicle.base.Vehicle;
 
 abstract class WaterVehicle extends Vehicle {
     private double displacementTons;

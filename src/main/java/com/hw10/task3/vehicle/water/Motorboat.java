@@ -1,4 +1,4 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.water;
 
 public class Motorboat extends WaterVehicle {
     private int enginePowerHp;

@@ -1,4 +1,6 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.land;
+
+import com.hw10.task3.vehicle.base.Vehicle;
 
 abstract class LandVehicle extends Vehicle {
     private int wheelCount;

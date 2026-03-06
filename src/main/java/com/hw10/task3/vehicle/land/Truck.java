@@ -1,4 +1,4 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.land;
 
 public class Truck extends LandVehicle {
     private int loadCapacity;

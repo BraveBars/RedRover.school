@@ -1,4 +1,4 @@
-package com.hw10.task3;
+package com.hw10.task3.vehicle.water;
 
 public class Sailboat extends WaterVehicle {
     private int maxHeight;
